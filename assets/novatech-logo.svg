@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+  <rect width="400" height="400" fill="#F9F9F7"/>
+
+  <!--
+    EMBLEM: a single falcon wing rendered as one clean continuous outline.
+    One unbroken stroke. No fill. No decoration.
+    Inspired by how Aston Martin uses a single wing silhouette.
+  -->
+  <g transform="translate(200, 175)">
+    <path
+      d="
+        M 0,0
+        C -10,-18 -30,-38 -55,-48
+        C -80,-58 -100,-52 -115,-42
+        C -95,-44 -72,-36 -52,-20
+        C -35,-6  -18, 8   0, 28
+        C 18, 8   35,-6   52,-20
+        C 72,-36  95,-44  115,-42
+        C 100,-52 80,-58  55,-48
+        C 30,-38  10,-18  0,0
+        Z
+      "
+      fill="#1A1A1A"
+      stroke="none"
+    />
+    <!-- Subtle centre body line -->
+    <ellipse cx="0" cy="8" rx="3.5" ry="22" fill="#F9F9F7"/>
+  </g>
+
+  <!-- Wordmark — pure tracking, no weight -->
+  <text
+    x="200" y="248"
+    text-anchor="middle"
+    font-family="'Optima','Didot','Bodoni MT','Palatino Linotype',serif"
+    font-size="15"
+    font-weight="400"
+    letter-spacing="11"
+    fill="#1A1A1A"
+  >NOVATECH</text>
+
+</svg>

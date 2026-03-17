@@ -1,0 +1,32 @@
+# deployment/streamlit_deployment.yml
+# Streamlit Cloud deployment configuration.
+# Reference: https://docs.streamlit.io/deploy/streamlit-community-cloud
+
+name: novatech-ai
+
+# Main entrypoint
+entrypoint: app.py
+
+# Python version
+python: "3.11"
+
+# Packages (also defined in requirements.txt — kept in sync)
+packages:
+  - streamlit
+  - pandas
+  - numpy
+  - scikit-learn
+  - joblib
+  - plotly
+  - matplotlib
+  - Pillow
+  - nltk
+  - google-generativeai
+  - deep-translator
+  - python-dotenv
+
+# Secrets (set in Streamlit Cloud dashboard, not here)
+# GEMINI_API_KEY = "..."
+
+# NLTK data download (handled at runtime in app.py via nltk.download())
+# No special build steps needed.
